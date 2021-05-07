@@ -5,6 +5,7 @@
 * [Diagram](#diagram)
 * [Infrastructure](#infrastructure)
 * [How to install](#how-to-install)
+* [Systematization](#systematization)
 * [Manual](#manual)
 * [Troble Shooting](#troble-shooting)
 * [Reference](#reference)
@@ -80,9 +81,13 @@
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
 
 
-##  실행 방법
+##  [Systematization](#index)
 
-* Win7sp1 sysmon vm 환경 실행
+* Kibana 실행 (관리자 계정 권장)
+  > bin/kibana.bat
+
+* Elasticsearch 실행 (관리자 계정 권장)
+  > bin/elasticsearch.bat
 
 * Win7sp1 sysmon vm 환경에서 sysmon 서비스 실행(관리자 계정)
   > sysmon.exe -i %configfile%
@@ -91,11 +96,6 @@
 * Win7sp1 sysmon vm 환경에서 winlogbeat 실행(관리자 계정)
   > winlogbeat.exe -c winlogbeat.yml
 
-* Elastic Kibana 실행(관리자 계정)
-  > bin/kibana.bat
-
-* Elasticsearch 실행(관리자 계정)
-  > bin/elasticsearch.bat
 
 * Ubuntu 18.04 64bit 환경에서 Elasticalert 실행
   >/elastalert  
