@@ -3,32 +3,37 @@
 ## Index
 * [How to install](#how-to-install)
 * [Diagram](#diagram)
+* [Infrastructure](#infrastructure)
 * [Troble Shooting](#troble-shooting)
 * [Reference](#reference)
 
-## Diagram
+## [Diagram](#index)
 
    ![screenshot](Conceptual_diagram.jpg)
 
-##  환경 구성
+## [Infrastructure](#index)
 
 * HOST
-	- Elasticsearch 7.12.1
-	- Kibana 7.12.1
 
-* Windows 7 32bit (Endpoint 환경) - VM 구성
-  - Python 2.7 32bit
-  - Elastic Winlogbeat 7.6.2
-  - sysmon
-  - Red Team Automation (Red Team용 MITRE ATT@CK 기반 malicious attack 발생)
-  - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
-    > https://github.com/SwiftOnSecurity/sysmon-config
-    
-* Elastic Stack 64bit (Server 환경) - Host
-  - Elastic Logstach (Optional) 설치
-    > https://www.elastic.co/kr/downloads/logstash
+|Name|Version|Remark|
+|-|-|-|
+|Elasticsearch|7.12.1|-|
+|Kibana|7.12.1|-|
 
-* Ubuntu 18.04 64bit 환경
+* Guest 1 (Windows 7 Ult) - 32bit
+
+|Name|Version|Remark|
+|-|-|-|
+|Python|2.7|32 bit|
+|Sysmon|13.10|-|
+|RTA|-|-|
+
+* Guest 2 (Ubuntu) - 18.04 64bit
+
+|Name|Version|Remark|
+|-|-|-|
+|Elastalert|0.2.4|-|
+
   - Yelp의 elastalert
     > https://github.com/Yelp/elastalert
 
@@ -38,10 +43,10 @@
 ## [How to install](#index)
 
 * HOST
-	+ Elasticsearch 설치
+	+ Elasticsearch 다운로드
 		> https://www.elastic.co/kr/downloads/past-releases#elasticsearch
 
-	+ Kibana 설치
+	+ Kibana 다운로드
 		> https://www.elastic.co/kr/downloads/past-releases#kibana
 
 	+ Elasticsearch 압축 해제 후 해당 디렉토리의 bin 폴더의 elasticsearch.bat으로 구동
