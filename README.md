@@ -1,9 +1,11 @@
 # Intelligent Incident Response Platform
 
 ## Index
-* [How to install](#how-to-install)
+
 * [Diagram](#diagram)
 * [Infrastructure](#infrastructure)
+* [How to install](#how-to-install)
+* [Manual](#manual)
 * [Troble Shooting](#troble-shooting)
 * [Reference](#reference)
 
@@ -60,19 +62,15 @@
 	
 	+ RTA 설치
 		> https://github.com/endgameinc/RTA
-	
-	
-
 
 * Guest 2 (ubuntu)
 
-  	<details>
-  	<summary><u>Yelp의 elastalert</u></summary>
+	<details>
+  	<summary>[Yelp의 elastalert]</summary>
   	<div markdown="1">
    	 > https://github.com/Yelp/elastalert
   	</div>
 	</details>
-    
 
   - elastalert 설치
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
@@ -99,7 +97,7 @@
   >/elastalert  
   >elastalert --verbose --start  --config <config.yaml> --rule <error.yaml>
  
-## 메뉴얼 
+## [Manual](#index)
 
 * sysmon
   > https://github.com/trustedsec/SysmonCommunityGuide/blob/master/Sysmon.md
