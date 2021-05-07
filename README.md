@@ -43,13 +43,20 @@
 ## [How to install](#index)
 
 * HOST
-	+ 1.Elasticsearch 설치
-		- > https://www.elastic.co/kr/downloads/elasticsearch
-	+ 2.Kibana 설치
-		- > https://www.elastic.co/kr/downloads/kibana
-	+ 3.Elasticsearch 압축 해제 후 해당 디렉토리의 bin 폴더의 elasticsearch.bat으로 구동
-		- 네트워크 정보(포트 및 IP) 를 변경하려면 config\elasticsearch.yml 참조
-
+	+ Elasticsearch 설치
+		> https://www.elastic.co/kr/downloads/elasticsearch
+	+ Kibana 설치
+		> https://www.elastic.co/kr/downloads/kibana
+	+ Elasticsearch 압축 해제 후 해당 디렉토리의 bin 폴더의 elasticsearch.bat으로 구동
+		> 기본주소 : http://127.0.0.1:9200
+		네트워크 정보(포트 및 IP) 를 변경하려면 config\elasticsearch.yml 참조
+	+ Kibana 압축 해제 후 해당 디렉토리의 bin 폴더의 kibana.bat으로 구동
+		> 기본주소 : http://127.0.0.1:5601
+		> 네트워크 정보(포트 및 IP) 를 변경하려면 config\kibana.yml 참조
+		
+		
+		
+		
 * Guest 1 (Windows)
 
 
