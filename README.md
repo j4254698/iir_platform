@@ -9,7 +9,7 @@
 
 ## [Diagram](#index)
 
-   ![screenshot](Conceptual_diagram.png)
+   ![screenshot](Conceptual_diagram.PNG)
 
 ## [Infrastructure](#index)
 
