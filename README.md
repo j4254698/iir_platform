@@ -3,16 +3,13 @@
 ## Index
 * [How to install](#how-to-install)
 * [Troble Shooting](#troble-shooting)
+* [Reference](#reference)
 
-##  Reference
-* Open Source Endpoint monitoring 
-  - https://github.com/DearBytes/Opensource-Endpoint-Monitoring
-  
 ##  시스템 구성도 
 
    ![screenshot](Conceptual_diagram.jpg)
 
-##  환경 구성 
+##  환경 구성
 * Windows 7 32bit (Endpoint 환경) - VM 구성
   - Python 2.7 32bit
   - Elastic Winlogbeat 7.6.2
@@ -65,7 +62,6 @@
 * Guest 2 (ubuntu)
 
 
-<hr/>
 
 ##  실행 방법
 
@@ -148,6 +144,11 @@
 [[ Elastalert ]]
 * pip install 오류
   > python version 3.6 다운
+
+## [Reference](#index)
+* Open Source Endpoint monitoring 
+  - https://github.com/DearBytes/Opensource-Endpoint-Monitoring 
+
 ## Contributors
 * maxup37
 * idk3669
