@@ -4,7 +4,7 @@
 * [How to install](#how-to-install)
 * [Troble Shooting](#troble-shooting)
 
-##  목표 구성도 참고 
+##  Reference
 * Open Source Endpoint monitoring 
   - https://github.com/DearBytes/Opensource-Endpoint-Monitoring
   
