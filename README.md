@@ -16,14 +16,14 @@
 
 ## [Infrastructure](#index)
 
-* HOST
+* **HOST**
 
 |Name|Version|Remark|
 |-|-|-|
 |Elasticsearch|7.12.1|-|
 |Kibana|7.12.1|-|
 
-* Guest 1 (Windows 7 Ult) - 32bit
+* **Guest 1 (Windows 7 Ult) - 32bit**
 
 |Name|Version|Remark|
 |-|-|-|
@@ -32,7 +32,7 @@
 |Sysmon|13.10|-|
 |RTA|-|-|
 
-* Guest 2 (Ubuntu 18.04) - 64bit
+* **Guest 2 (Ubuntu 18.04) - 64bit**
 
 |Name|Version|Remark|
 |-|-|-|
@@ -41,7 +41,7 @@
 
 ## [How to install](#index)
 
-* HOST
+* **HOST**
 	+ Elasticsearch download
 		> https://www.elastic.co/kr/downloads/past-releases#elasticsearch
 
@@ -58,7 +58,7 @@
 		> 
 		> 네트워크 정보(포트 및 IP) 를 변경하려면 config\kibana.yml 참조
 		
-* Guest 1 (Windows)
+* **Guest 1 (Windows)**
 	+ Sysmon download
 		> https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
 	
@@ -68,7 +68,7 @@
 	+ Winlogbeat download
 		> https://www.elastic.co/kr/downloads/past-releases/#winlogbeat
 
-* Guest 2 (ubuntu)
+* **Guest 2 (ubuntu)**
 
 	<details>
   	<summary>[Yelp의 elastalert]</summary>
@@ -103,13 +103,13 @@
  
 ## [Manual](#index)
 
-* sysmon
+* **sysmon**
   > https://github.com/trustedsec/SysmonCommunityGuide/blob/master/Sysmon.md
 
-* elastic
+* **elastic**
   > https://www.elastic.co/guide/en/elastic-stack-get-started/7.6/get-started-elastic-stack.html#install-elasticsearch
 
-* elastalert
+* **elastalert**
   > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
   
  ## [Troble Shooting](#index)
