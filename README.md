@@ -79,6 +79,7 @@
 	</details>
 
   - elastalert install
+
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
 
 
@@ -91,12 +92,11 @@
   > bin/elasticsearch.bat
 
 * Win7sp1 sysmon vm 환경에서 sysmon 서비스 실행(관리자 계정)
-  > sysmon.exe -i %configfile%
+  > sysmon.exe -i sysmon-config.xml
     (기존에 설치했다면 필요 없음)
 
 * Win7sp1 sysmon vm 환경에서 winlogbeat 실행(관리자 계정)
   > winlogbeat.exe -c winlogbeat.yml
-
 
 * Ubuntu 18.04 64bit 환경에서 Elasticalert 실행
   >/elastalert  
