@@ -2,19 +2,24 @@
 
 ## Index
 * [How to install](#how-to-install)
+* [Diagram](#diagram)
 * [Troble Shooting](#troble-shooting)
 * [Reference](#reference)
 
-##  시스템 구성도 
+## Diagram
 
    ![screenshot](Conceptual_diagram.jpg)
 
 ##  환경 구성
+
+* HOST
+	- Elasticsearch 7.12.1
+	- Kibana 7.12.1
+
 * Windows 7 32bit (Endpoint 환경) - VM 구성
   - Python 2.7 32bit
   - Elastic Winlogbeat 7.6.2
   - sysmon
-    > microsoft의 sysinternals.com
   - Red Team Automation (Red Team용 MITRE ATT@CK 기반 malicious attack 발생)
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
     > https://github.com/SwiftOnSecurity/sysmon-config
@@ -34,10 +39,10 @@
 
 * HOST
 	+ Elasticsearch 설치
-		> https://www.elastic.co/kr/downloads/elasticsearch
+		> https://www.elastic.co/kr/downloads/past-releases#elasticsearch
 
 	+ Kibana 설치
-		> https://www.elastic.co/kr/downloads/kibana
+		> https://www.elastic.co/kr/downloads/past-releases#kibana
 
 	+ Elasticsearch 압축 해제 후 해당 디렉토리의 bin 폴더의 elasticsearch.bat으로 구동
 		> 기본주소 : http://127.0.0.1:9200
