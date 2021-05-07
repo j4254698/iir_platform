@@ -2,7 +2,7 @@
 
 ## Index
 * [How to install](#how-to-install)
-
+* [Troble Shooting](#troble-shooting)
 
 ##  목표 구성도 참고 
 * Open Source Endpoint monitoring 
@@ -19,19 +19,12 @@
   - sysmon
     > microsoft의 sysinternals.com
   - Red Team Automation (Red Team용 MITRE ATT@CK 기반 malicious attack 발생)
-    > https://github.com/endgameinc/RTA
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
     > https://github.com/SwiftOnSecurity/sysmon-config
     
 * Elastic Stack 64bit (Server 환경) - Host
   - Elastic Logstach (Optional) 설치
     > https://www.elastic.co/kr/downloads/logstash
-
-  - Elastic Elasticsearch 설치
-    > https://www.elastic.co/kr/downloads/elasticsearch
-
-  - Elastic Kibana 설치
-    > https://www.elastic.co/kr/downloads/kibana
 
 * Ubuntu 18.04 64bit 환경
   - Yelp의 elastalert
@@ -60,7 +53,13 @@
 		> 네트워크 정보(포트 및 IP) 를 변경하려면 config\kibana.yml 참조
 		
 * Guest 1 (Windows)
-
+	+ Sysmon 설치
+		> https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
+	
+	+ RTA 설치
+		> https://github.com/endgameinc/RTA
+	
+	
 
 
 * Guest 2 (ubuntu)
@@ -100,7 +99,7 @@
 * elastalert
   > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
   
- ## 오류 수정 
+ ## [Troble Shooting](#index)
  [[ windows 7 ]]
  * sysmon 10.x 실행 오류
    > kb2533623 설치 (wevtapi.dll 문제)
