@@ -2,7 +2,7 @@
 # RTA: msxsl_network.py
 # ATT&CK: T1127
 # Description: Generates network traffic from msxsl.exe
-
+# not support
 import common
 
 MS_XSL = common.get_path("bin", "msxsl.exe")

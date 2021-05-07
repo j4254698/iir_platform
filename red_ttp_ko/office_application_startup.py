@@ -1,6 +1,9 @@
 # Name: Office Application Startup
 # rta: office_application_startup.py
 # ATT&CK: T1137
+#   - Ref. https://attack.mitre.org/techniques/T1137/002/
+#   - Ref. Office autorun list
+#          https://github.com/beahunt3r/Windows-Hunting/blob/master/Persistence/Registry%20Autoruns/Office
 # Description: Modifies the registry to persist a DLL on Office Startup.
 
 import common

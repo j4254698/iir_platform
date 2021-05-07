@@ -6,7 +6,13 @@
 import _winreg as winreg
 import common
 
-
+# Ref. About COM
+#         - http://www.tipssoft.com/bulletin/board.php?bo_table=FAQ&wr_id=762
+# Ref. About InprocServer32
+#         - https://docs.microsoft.com/en-us/windows/win32/com/inprocserver32
+# scrobj.dll: Windows Script Component Runtime
+# Ref. About COM object hijacking
+#         - https://www.gdatasoftware.com/blog/2014/10/23941-com-object-hijacking-the-discreet-way-of-persistence
 def main():
     key = "SOFTWARE\\Classes\\CLSID\\{00000000-0000-0000-0000-0000DEADBEEF}\\InprocServer32"
     scrobj = "C:\\WINDOWS\\system32\\scrobj.dll"

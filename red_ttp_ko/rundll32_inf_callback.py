@@ -3,6 +3,10 @@
 # ATT&CK: T1105
 # Description: Loads RunDll32 with a suspicious .inf file that makes a local http GET
 
+# Ref. about RunDLL32
+#       - http://blog.naver.com/PostView.nhn?blogId=koromoon&logNo=220079686444
+# Ref. about squiblydoo attack
+#       - https://www.rocketcyber.com/blog-cyber-cases-from-the-soc-squiblydoo-attack
 import time
 import common
 
@@ -21,6 +25,9 @@ def main():
     common.patch_regex(INF_FILE, common.CALLBACK_REGEX, callback)
 
     rundll32 = "rundll32.exe"
+	# Ref. https://docs.microsoft.com/en-us/windows/win32/api/setupapi/nf-setupapi-installhinfsectiona
+	# Ref. UnregisterDlls Directive in .inf
+	#       - https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-unregisterdlls-directive
     dll_entrypoint = "setupapi.dll,InstallHinfSection"
     common.execute([rundll32, dll_entrypoint, "DefaultInstall", "128", INF_FILE], shell=False)
 

@@ -6,6 +6,9 @@ import time
 import os
 import common
 
+# Ref. Using schtasks
+#     - https://ychcom.tistory.com/entry/schtasks-%EC%8A%A4%EC%BC%80%EC%A4%84%EB%9F%AC-%EC%9E%91%EC%97%85-%EC%8A%A4%EC%BC%80%EC%A4%84%EB%9F%AC-%EC%82%AC%EC%9A%A9%EB%B2%95
+
 
 def schtasks(*args, **kwargs):
     return common.execute(['schtasks.exe'] + list(args), **kwargs)

@@ -25,6 +25,7 @@ def main():
     # Remove log file if exists
     common.remove_file(log_file)
 
+    # cscript.exe: you can run scripts by typing the name of a script file at the command prompt
     common.log("Running VBS")
     common.execute(["cscript.exe", VBS])
 
@@ -34,6 +35,8 @@ def main():
     common.remove_file(log_file)
 
     # Now trigger a 'logon' event which causes persistence to run
+	# - Ref. userinit.exe
+	#        http://egloos.zum.com/dstein/v/2559472
     common.log("Simulating user logon and loading of profile")
     common.execute(["taskkill.exe", "/f", "/im", "explorer.exe"])
     time.sleep(2)

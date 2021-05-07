@@ -3,6 +3,8 @@
 # ATT&CK:
 # Description: Use msiexec.exe to download an executable from a remote site over HTTP and run it.
 
+#Ref. Provides the means to install, modify, and perform operations on Windows Installer from the command line.
+
 import common
 
 

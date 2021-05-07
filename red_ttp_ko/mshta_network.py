@@ -3,6 +3,7 @@
 # ATT&CK: T1170
 # Description: Generates network traffic from mshta.exe
 
+#Ref. https://www.ired.team/offensive-security/code-execution/t1170-mshta-code-execution
 import common
 
 HTA_FILE = common.get_path("bin", "beacon.hta")
@@ -20,6 +21,8 @@ def main():
     common.log("Updating the callback to %s" % new_callback)
     common.patch_regex(HTA_FILE, common.CALLBACK_REGEX, new_callback)
 
+    # Mshta.exe runs the Microsoft HTML Application Host, a utility responsible for executing HTA (HTML Application) files in the Windows OS.
+	#Ref. about Msxml2.XMLHttp in beacon.hta: https://rahxephon.tistory.com/874
     mshta = 'mshta.exe'
     common.execute([mshta, HTA_FILE], timeout=10, kill=True)
     server.shutdown()

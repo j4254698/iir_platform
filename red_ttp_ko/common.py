@@ -37,7 +37,7 @@ MISSING_DEPENDENCIES = 2
 MISSING_PSEXEC = 3
 UNSUPPORTED_RTA = 4
 ACCESS_DENIED = 5
-print('haha')
+
 # Amount of seconds a command should take at a minimum.
 # This can allow for arbitrary slow down of scripts
 MIN_EXECUTION_TIME = 0

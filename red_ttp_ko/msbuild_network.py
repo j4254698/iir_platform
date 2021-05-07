@@ -3,6 +3,7 @@
 # ATT&CK: T1127
 # Description: Generates network traffic from msbuild.exe
 
+#Ref. https://attack.mitre.org/techniques/T1127/001/
 import re
 import common
 
@@ -17,6 +18,7 @@ def main():
     common.clear_web_cache()
 
     common.log("Updating the callback http://%s:%d" % (ip, port))
+	# .csproj: C# project file that is based on MSBUILD XML schema
     target_task = "tmp-file.csproj"
     common.copy_file(common.get_path("bin", "BadTasks.csproj"), target_task)
     new_callback = "http://%s:%d" % (ip, port)

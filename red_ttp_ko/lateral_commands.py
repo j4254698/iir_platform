@@ -41,6 +41,7 @@ def main(remote_host=None):
     for command in commands:
         common.execute(command.format(host=remote_host, wmi_node=wmi_node))
 
+    # Ref. https://gomguard.tistory.com/125
     _, whoami = common.execute("whoami")
     _, hostname = common.execute("hostname")
 

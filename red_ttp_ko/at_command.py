@@ -5,6 +5,7 @@
 # Description: Enumerates at tasks on target host, and schedules an at job for one hour in the future. Then checks the
 #  status of that task, and deletes the task.
 
+#Ref. https://jangjy.tistory.com/291  about _)_future__ and print_function
 from __future__ import print_function
 import common
 import sys
@@ -15,7 +16,8 @@ import re
 def main(target_host=common.LOCAL_IP):
     host_str = '\\\\%s' % target_host
 
-    # Current time at \\localhost is 11/16/2017 11:25:50 AM
+    # execute "net time \\localhost"
+	# result: \\localhost의 현재 시간은 2021-03-11 오후 4:41:07입니다.
     code, output = common.execute(['net', 'time', host_str])
     match = re.search(r'현재 시간은 (\d+)-(\d+)-(\d+) (오전|오후) (\d+):(\d+):(\d+)', output)
     print(match.groups())
@@ -50,4 +52,4 @@ def main(target_host=common.LOCAL_IP):
 
 
 if __name__ == "__main__":
-    exit(main(*sys.argv[1:]))
+    exit(main(*sys.argv[1:])) # argument slicing & unpacking argument (ex1_sys.argv.py)

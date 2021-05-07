@@ -32,6 +32,7 @@ def main():
 
     if not fallback:
         common.clear_web_cache()
+		# Ref. https://docs.microsoft.com/ko-kr/dotnet/framework/windows-services/how-to-install-and-uninstall-services
         common.execute([install_util, '/logfile=', '/LogToConsole=False', '/U', target_app])
 
     else:

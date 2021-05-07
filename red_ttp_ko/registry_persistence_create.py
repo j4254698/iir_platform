@@ -18,6 +18,7 @@ def write_reg_string(hive, key, value, data, delete=True):
     hkey = wreg.CreateKey(hive, key)
     key = key.rstrip('\\')
     common.log("Writing to registry %s\\%s -> %s" % (key, value, data))
+	# Ref. SetValueEx(key, value_name, reserved, type, value)
     wreg.SetValueEx(hkey, value, 0, wreg.REG_SZ, data)
     stored, code = wreg.QueryValueEx(hkey, value)
     if data != stored:
