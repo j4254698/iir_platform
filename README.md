@@ -36,6 +36,7 @@
 
 |Name|Version|Remark|
 |-|-|-|
+|Python|3.6.9|64 bit|
 |Elastalert|0.2.4|-|
 
 
