@@ -1,5 +1,9 @@
 # Intelligent Incident Response Platform
 
+## index
+* [How to install](#how-to-install)
+
+
 ##  목표 구성도 참고 
 * Open Source Endpoint monitoring 
   - https://github.com/DearBytes/Opensource-Endpoint-Monitoring
@@ -36,7 +40,26 @@
   - elastalert 설치
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
 
-##  실행 방법 
+## How to install
+
+* HOST
+	+ 1.Elasticsearch 설치
+		- > https://www.elastic.co/kr/downloads/elasticsearch
+	+ 2.Kibana 설치
+		- > https://www.elastic.co/kr/downloads/kibana
+	+ 3.Elasticsearch 압축 해제 후 해당 디렉토리의 bin 폴더의 elasticsearch.bat으로 구동
+		- 네트워크 정보(포트 및 IP) 를 변경하려면 config\elasticsearch.yml 참조
+
+* Guest 1 (Windows)
+
+
+
+* Guest 2 (ubuntu)
+
+
+<hr/>
+
+##  [실행 방법](
 
 * Win7sp1 sysmon vm 환경 실행
 
