@@ -67,7 +67,7 @@
 * Guest 2 (ubuntu)
 
   	<details>
-  	<summary>Yelp의 elastalert</summary>
+  	<summary><u>Yelp의 elastalert</u></summary>
   	<div markdown="1">
    	 > https://github.com/Yelp/elastalert
   	</div>
