@@ -1,7 +1,7 @@
 # Intelligent Incident Response Platform
 
-## index
-* [1.How to install](#how-to-install)
+## Index
+* [How to install](#how-to-install)
 
 
 ##  목표 구성도 참고 
@@ -40,7 +40,7 @@
   - elastalert 설치
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
 
-## [How to install](#1.how-to-install)
+## [How to install](#index)
 
 * HOST
 	+ 1.Elasticsearch 설치
