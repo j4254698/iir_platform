@@ -28,17 +28,12 @@
 |Sysmon|13.10|-|
 |RTA|-|-|
 
-* Guest 2 (Ubuntu) - 18.04 64bit
+* Guest 2 (Ubuntu 18.04) - 64bit
 
 |Name|Version|Remark|
 |-|-|-|
 |Elastalert|0.2.4|-|
 
-  - Yelp의 elastalert
-    > https://github.com/Yelp/elastalert
-
-  - elastalert 설치
-    > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
 
 ## [How to install](#index)
 
@@ -71,6 +66,16 @@
 
 * Guest 2 (ubuntu)
 
+  	<details>
+  	<summary>Yelp의 elastalert</summary>
+  	<div markdown="1">
+   	 > https://github.com/Yelp/elastalert
+  	</div>
+	</details>
+    
+
+  - elastalert 설치
+    > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
 
 
 ##  실행 방법
