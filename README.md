@@ -11,7 +11,7 @@
 
 ## [Diagram](#index)
 
-   ![screenshot](Conceptual_diagram.PNG)
+   ![screenshot](diagram.PNG)
 
 ## [Infrastructure](#index)
 
@@ -27,6 +27,7 @@
 |Name|Version|Remark|
 |-|-|-|
 |Python|2.7|32 bit|
+|Winlogbeat|7.12.1|-|
 |Sysmon|13.10|-|
 |RTA|-|-|
 
@@ -40,10 +41,10 @@
 ## [How to install](#index)
 
 * HOST
-	+ Elasticsearch 다운로드
+	+ Elasticsearch download
 		> https://www.elastic.co/kr/downloads/past-releases#elasticsearch
 
-	+ Kibana 다운로드
+	+ Kibana download
 		> https://www.elastic.co/kr/downloads/past-releases#kibana
 
 	+ Elasticsearch 압축 해제 후 해당 디렉토리의 bin 폴더의 elasticsearch.bat으로 구동
@@ -57,11 +58,14 @@
 		> 네트워크 정보(포트 및 IP) 를 변경하려면 config\kibana.yml 참조
 		
 * Guest 1 (Windows)
-	+ Sysmon 설치
+	+ Sysmon download
 		> https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
 	
-	+ RTA 설치
+	+ RTA download
 		> https://github.com/endgameinc/RTA
+	
+	+ Winlogbeat download
+		> https://www.elastic.co/kr/downloads/past-releases/#winlogbeat
 
 * Guest 2 (ubuntu)
 
