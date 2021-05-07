@@ -76,7 +76,7 @@
   	</div>
 	</details>
 
-  - elastalert 설치
+  - elastalert install
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
 
 
