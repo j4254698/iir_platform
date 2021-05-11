@@ -12,7 +12,7 @@
 
 ## [Diagram](#index)
 
-   ![screenshot](diagram.PNG)
+   ![screenshot](diagram.png)
 
 ## [Infrastructure](#index)
 
