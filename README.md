@@ -5,7 +5,7 @@
 * [Diagram](#diagram)
 * [Infrastructure](#infrastructure)
 * [How to install](#how-to-install)
-* [Systematization](#systematization)
+* [Systematization](#getting-started)
 * [Manual](#manual)
 * [Troble Shooting](#troble-shooting)
 * [Reference](#reference)
@@ -83,7 +83,7 @@
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
 
 
-##  [Systematization](#index)
+##  [Getting Started](#index)
 
 * Kibana 실행 (관리자 계정 권장)
   > bin/kibana.bat
