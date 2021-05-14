@@ -24,7 +24,7 @@
 |Kibana|7.12.1|-|
 
 * **Guest 1 (Windows 7 Ult) - 32bit**
-
+ 
 |Name|Version|Remark|
 |-|-|-|
 |Python|2.7|32 bit|
