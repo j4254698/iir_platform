@@ -102,6 +102,18 @@
   >/elastalert  
   >elastalert --verbose --start  --config <config.yaml> --rule <error.yaml>
  
+* [Guest 2]
+
+```ubuntu
+pip3 install elastalert
+```
+
+Some Markdown text with <span style="color:blue">some *blue* text</span>.
+```ubuntu
+python3 -m pip install -U pip
+```
+ 
+ 
 ## [Manual](#index)
 
 * **sysmon**
